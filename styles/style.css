@@ -91,6 +91,96 @@ font-family: Work Sans;
 font-size: 45px;
 font-weight: 700;
 }
+/* experienc part */
+.experience-description{
+    display:flex;
+    padding:30px;
+    padding-top: 100px;
+    gap:150px;
+    justify-content: space-between;
+}
+.experience-img{
+    width: 100%;
+    margin-top: 80px;
+    
+}
+.experience-description h1{
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid orange;
+    padding-left: 20px;
+}
+.ex-des{
+    width: 586px;
+height: 171px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+gap:30px;
+}
+.part{
+    gap:30px;
+    margin-bottom: 20px;
+}
+.ten-year-badge{
+    border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+width:300px;
+padding:40px;
+text-align: center;
+position:relative;
+bottom:100px;
+right:100px;
+}
+.ten-year{
+    font-size: 4rem;
+    margin: 0px;
+    text-align: center;
+}
+.ten-year-badge p{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 25px;
+font-weight: 500;
+margin-bottom: 0px;
+}
+.sf{
+color: #131313;
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+padding-left:100px;
+padding-bottom:0px;
+}
+.sf-des{
+    color: #727272;
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+padding-left: 100px;
+padding-top: 0px;
+}
+.box{
+    width: 241.831px;
+height: 241.831px;
+border-radius: 8px;
+border: 1px solid #FF900E;
+margin-bottom: 30px;
+text-align: center;
+}
+.batch , .calender ,.customer , .email{
+    padding-top: 70px;
+}
+.box-dec{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 120px;
+    margin-top: 50px;
+}
 /* mobile devices */
 @media screen and (max-width: 576px) {
     header{
@@ -118,19 +208,49 @@ font-weight: 700;
 .features-description{
     padding-left: 10px;
 }
+.experience-description{
+    flex-direction: column;
+}
+.experience-img{
+    width: 100%;
+    margin-top: 350px;
     
+}
+.part{
+    margin-right: 300px;
+}
+.ten-year-badge{
+    position:static;
+    max-width: 200px;
+    padding-left: 0px;
+}
+.box-dec{
+    grid-template-columns: repeat(1,1fr);
+    
+}
 }
 /* medium or tablet devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header{
         padding:50px;
     }
-    .features{
+    .experience-description, .features{
         flex-direction: column;
        padding-right: 150px;
+       gap:100px;
     }
     .features-description{
         padding-left: 70px;
+        padding-top: 300px;
+    }
+    .experience-img{
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 200px;
+        
+    }
+    .ten-year-badge{
+        left:20px;
     }
     
 }
