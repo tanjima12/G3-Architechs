@@ -1,0 +1,136 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins&family=Roboto:ital,wght@1,500&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    ;
+    padding:40px 240px;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+ul{
+    display:flex;
+}
+ul > li{
+    list-style: none;
+    padding:10px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* banner section */
+.banner{
+    text-align: center;
+    padding:20px;
+}
+.description{
+    color: #727272;
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 400;
+}
+button{
+    width: 180px;
+height: 64px;
+    border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 600;
+border-style: none;
+}
+.banner-img{
+    width:100%;
+    /* margin:20px 60px 0px 80px; */
+    margin-top: 20px;
+}
+/* features section */
+.features{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border:8px;
+    gap:24px;
+    padding-top: 80px;
+    padding-left:100px;
+}
+.quick{
+    color: #727272;
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 500;
+}
+h2{
+    color: #131313;
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+}
+.fea{
+    color: #FF900E;
+font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+}
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+}
+ h3{
+    text-align: center;
+} 
+.description{
+    padding-right: 5px;
+}
+.features{
+    flex-direction: column;
+}
+.features-img{
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+    padding-top: 10px;
+    padding-left:5px;
+    padding:10px
+}
+.features-description{
+    padding-left: 10px;
+}
+    
+}
+/* medium or tablet devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding:50px;
+    }
+    .features{
+        flex-direction: column;
+       padding-right: 150px;
+    }
+    .features-description{
+        padding-left: 70px;
+    }
+    
+}
